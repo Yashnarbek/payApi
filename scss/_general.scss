@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+}
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+html{
+    height: 100%;
+}
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-family: "Public Sans", "Arial", sans-serif;
+
+}
+
+
+.site-main{
+    flex-grow: 1;
+}

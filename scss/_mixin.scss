@@ -1,0 +1,23 @@
+@mixin list-unstyle {
+    margin: 0;
+    padding-left: 0;
+}
+@mixin heading-text-unstyle {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+@mixin after-befor ($width, $height){
+    content: "";
+    display: inline-block;
+}
+@mixin mobile-first($width) {
+    @media only screen and (min-width: $width){
+        @content;
+    }
+}
+@mixin desktop-first($width) {
+    @media only screen and (max-width: $width){
+        @content;
+    }
+}
+
