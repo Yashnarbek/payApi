@@ -1,8 +1,12 @@
 .hero {
+    position: relative;
+    z-index: 6;
+    top: -80px;
+    padding-top: 100px;
     background-color: #F2F2F2;
     background-image: url("/images/circle.svg");
     background-repeat: no-repeat;
-    background-size: 600px;
+    background-size: 700px;
     background-position: center top -450px;
 }
 
@@ -32,7 +36,6 @@
     display: block;
     margin-top: 24px;
     padding: 16px 24px;
-    background-color: #fff;
     opacity: 0.5;
     border: none;
     border-radius: 24px;
@@ -68,8 +71,9 @@
 }
 @include mobile-first (650px) {
     .hero {
-        padding-top: 50px;
-        background-size: 1000px;
+        top: -120px;
+        padding-top: 160px;
+        background-size: 1100px;
         background-position: center top -800px;
     }
     .hero__heading {
@@ -100,5 +104,32 @@
     .form-box__submit {
         margin-top: 0;
         margin-left: auto;
+    }
+}
+@include mobile-first(992px) {
+    .hero {
+        background-size: 800px;
+        background-position: calc(50% + 500px) -200px;
+    }
+    .hero__wrapper {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+    .hero__box {
+        padding-top: 50px;
+        margin-left: 0;
+    }
+    .hero__img-box {
+        margin-right: 40px;
+    }
+    .hero__heading {
+        font-family: 'DM Serif Display';
+        text-align: start;
+        font-weight: 400;
+        font-size: 72px;
+        line-height: 72px;
+        letter-spacing: -0.553846px;
+        color: #36536B;
     }
 }
