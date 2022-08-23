@@ -9,119 +9,117 @@
 </head>
 <body>
     <!-- HEADER BIGEN  -->
-    <div class="big-wrapper">
-        <header class="site-header">
+    <header class="site-header">
+        <div class="container">
+            <div class="site-header__wrapper">
+                <a class="site-header__logo" href="index.html">
+                    <img class="site-header__img" src="./images/logo.svg" alt="header logo">
+                </a>
+                <button class="site-header__burger" type="button"></button>
+                <nav class="site-header__nav sitenav">
+                    <button class="sitenav__close" type="button"></button>
+                    <ul class="sitenav__list">
+                        <li class="sitenav__item">
+                            <a href="#" class="sitenav__link">Pricing</a>
+                        </li>
+                        <li class="sitenav__item">
+                            <a href="#" class="sitenav__link">About</a>
+                        </li>
+                        <li class="sitenav__item">
+                            <a href="#" class="sitenav__link">Contact</a>
+                        </li>
+                    </ul>
+                    <a class="site-header__demo" href="#">Schedule a Demo</a>
+                </nav>
+            </div>
+        </div>
+    </header>    
+    <!-- HEADER END  -->
+    
+    <!-- MAIN BIGEN  -->
+    <main class="site-main">
+        <section class="hero-pricing">
             <div class="container">
-                <div class="site-header__wrapper">
-                    <a class="site-header__logo" href="index.html">
-                        <img class="site-header__img" src="./images/logo.svg" alt="header logo">
-                    </a>
-                    <button class="site-header__burger" type="button"></button>
-                    <nav class="site-header__nav sitenav">
-                        <button class="sitenav__close" type="button"></button>
-                        <ul class="sitenav__list">
-                            <li class="sitenav__item">
-                                <a href="#" class="sitenav__link">Pricing</a>
-                            </li>
-                            <li class="sitenav__item">
-                                <a href="#" class="sitenav__link">About</a>
-                            </li>
-                            <li class="sitenav__item">
-                                <a href="#" class="sitenav__link">Contact</a>
-                            </li>
-                        </ul>
-                        <a class="site-header__demo" href="#">Schedule a Demo</a>
-                    </nav>
+                <div class="hero-pricing__wrap">
+                    <h2 class="hero-pricing__title">
+                        Pricing
+                    </h2>
+                    <div class="hero-pricing__list">
+                        <li class="hero-pricing__item">
+                            <h3 class="hero-pricing__item-title">Free Plan</h3>
+                            <p class="hero-pricing__item-text">
+                                Build and test using our core set of products with up to 100 API requests 
+                            </p>
+                            <span class="hero-pricing__item-span">$0.00</span>
+                            <div class="hero-pricing__item-link-wrap">
+                                <a class="hero-pricing__item-link" href="#">Transactions</a>
+                                <a class="hero-pricing__item-link" href="#">Auth</a>
+                                <a class="hero-pricing__item-link" href="#">Identity</a>
+                                <a class="hero-pricing__item-link" href="#" >Investments</a>
+                                <a class="hero-pricing__item-link" href="#">Assets</a>
+                                <a class="hero-pricing__item-link" href="#">Liabilities</a>
+                                <a class="hero-pricing__item-link" href="#">Income</a>
+                            </div>
+                            
+                            <div class="hero-pricing__btn-wrap">
+                                <button class="hero-pricing__btn" type="button">Request Access</button>
+                            </div>
+                        </li>
+                        <li class="hero-pricing__item">
+                            <h3 class="hero-pricing__item-title">Basic Plan</h3>
+                            <p class="hero-pricing__item-text">
+                                Launch your project with unlimited requests and no contractual minimums 
+                            </p>
+                            <span class="hero-pricing__item-span">$249.00</span>
+                            <div class="hero-pricing__item-link-wrap">
+                                <a class="hero-pricing__item-link" href="#">Transactions</a>
+                                <a class="hero-pricing__item-link" href="#">Auth</a>
+                                <a class="hero-pricing__item-link" href="#">Identity</a>
+                                <a class="hero-pricing__item-link" href="#" >Investments</a>
+                                <a class="hero-pricing__item-link" href="#">Assets</a>
+                                <a class="hero-pricing__item-link" href="#">Liabilities</a>
+                                <a class="hero-pricing__item-link" href="#">Income</a>
+                            </div>
+                            
+                            <div class="hero-pricing__btn-wrap">
+                                <button class="hero-pricing__btn" type="button">Request Access</button>
+                            </div>
+                        </li>
+                        <li class="hero-pricing__item">
+                            <h3 class="hero-pricing__item-title">Premium Plan</h3>
+                            <p class="hero-pricing__item-text">
+                                Get tailored solutions, volume pricing, and dedicated support for your team 
+                            </p>
+                            <span class="hero-pricing__item-span">$499.00</span>
+                            <div class="hero-pricing__item-link-wrap">
+                                <a class="hero-pricing__item-link" href="#">Transactions</a>
+                                <a class="hero-pricing__item-link" href="#">Auth</a>
+                                <a class="hero-pricing__item-link" href="#">Identity</a>
+                                <a class="hero-pricing__item-link" href="#" >Investments</a>
+                                <a class="hero-pricing__item-link" href="#">Assets</a>
+                                <a class="hero-pricing__item-link" href="#">Liabilities</a>
+                                <a class="hero-pricing__item-link" href="#">Income</a>
+                            </div>                           
+                            
+                            <div class="hero-pricing__btn-wrap">
+                                <button class="hero-pricing__btn" type="button">Request Access</button>
+                            </div>
+                        </li>
+                    </div>
+                </div>
+                <div class="raedy">
+                    <h2 class="raedy__title">
+                        Ready to start?
+                    </h2>
+                    <form action="#" method="post" autocomplete="off">
+                        <input class="raedy__input" type="email" name="your_email" aria-label="your email" placeholder="Enter email address">
+                        <button class="raedy__btn" type="submit">Schedule a Demo</button>
+                    </form>
                 </div>
             </div>
-        </header>    
-        <!-- HEADER END  -->
-  
-        <!-- MAIN BIGEN  -->
-        <!-- <main class="site-main"> -->
-            <section class="hero-pricing">
-                <div class="container">
-                    <div class="hero-pricing__wrap">
-                        <h2 class="hero-pricing__title">
-                            Pricing
-                        </h2>
-                        <div class="hero-pricing__list">
-                            <li class="hero-pricing__item">
-                                <h3 class="hero-pricing__item-title">Free Plan</h3>
-                                <p class="hero-pricing__item-text">
-                                    Build and test using our core set of products with up to 100 API requests 
-                                </p>
-                                <span class="hero-pricing__item-span">$0.00</span>
-                                <div class="hero-pricing__item-link-wrap">
-                                    <a class="hero-pricing__item-link" href="#">Transactions</a>
-                                    <a class="hero-pricing__item-link" href="#">Auth</a>
-                                    <a class="hero-pricing__item-link" href="#">Identity</a>
-                                    <a class="hero-pricing__item-link" href="#" >Investments</a>
-                                    <a class="hero-pricing__item-link" href="#">Assets</a>
-                                    <a class="hero-pricing__item-link" href="#">Liabilities</a>
-                                    <a class="hero-pricing__item-link" href="#">Income</a>
-                                </div>
-                                
-                                <div class="hero-pricing__btn-wrap">
-                                    <button class="hero-pricing__btn" type="button">Request Access</button>
-                                </div>
-                            </li>
-                            <li class="hero-pricing__item">
-                                <h3 class="hero-pricing__item-title">Basic Plan</h3>
-                                <p class="hero-pricing__item-text">
-                                    Launch your project with unlimited requests and no contractual minimums 
-                                </p>
-                                <span class="hero-pricing__item-span">$249.00</span>
-                                <div class="hero-pricing__item-link-wrap">
-                                    <a class="hero-pricing__item-link" href="#">Transactions</a>
-                                    <a class="hero-pricing__item-link" href="#">Auth</a>
-                                    <a class="hero-pricing__item-link" href="#">Identity</a>
-                                    <a class="hero-pricing__item-link" href="#" >Investments</a>
-                                    <a class="hero-pricing__item-link" href="#">Assets</a>
-                                    <a class="hero-pricing__item-link" href="#">Liabilities</a>
-                                    <a class="hero-pricing__item-link" href="#">Income</a>
-                                </div>
-                                
-                                <div class="hero-pricing__btn-wrap">
-                                    <button class="hero-pricing__btn" type="button">Request Access</button>
-                                </div>
-                            </li>
-                            <li class="hero-pricing__item">
-                                <h3 class="hero-pricing__item-title">Premium Plan</h3>
-                                <p class="hero-pricing__item-text">
-                                    Get tailored solutions, volume pricing, and dedicated support for your team 
-                                </p>
-                                <span class="hero-pricing__item-span">$499.00</span>
-                                <div class="hero-pricing__item-link-wrap">
-                                    <a class="hero-pricing__item-link" href="#">Transactions</a>
-                                    <a class="hero-pricing__item-link" href="#">Auth</a>
-                                    <a class="hero-pricing__item-link" href="#">Identity</a>
-                                    <a class="hero-pricing__item-link" href="#" >Investments</a>
-                                    <a class="hero-pricing__item-link" href="#">Assets</a>
-                                    <a class="hero-pricing__item-link" href="#">Liabilities</a>
-                                    <a class="hero-pricing__item-link" href="#">Income</a>
-                                </div>                           
-                                
-                                <div class="hero-pricing__btn-wrap">
-                                    <button class="hero-pricing__btn" type="button">Request Access</button>
-                                </div>
-                            </li>
-                        </div>
-                    </div>
-                    <div class="raedy">
-                        <h2 class="raedy__title">
-                            Ready to start?
-                        </h2>
-                        <form action="#" method="post" autocomplete="off">
-                            <input class="raedy__input" type="email" name="your_email" aria-label="your email" placeholder="Enter email address">
-                            <button class="raedy__btn" type="submit">Schedule a Demo</button>
-                        </form>
-                    </div>
-                </div>
-            </section>
-        <!-- </main> -->
-        <!-- MAIN END  -->
-      </div>
+        </section>
+    </main>
+    <!-- MAIN END  -->
     
     <!-- FOOTER BIGEN  -->
     <footer class="site-footer">
