@@ -1,0 +1,139 @@
+.site-header {
+    padding-top: 40px;
+    background-color: #D6DADE;
+}
+.site-header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-header__burger {
+    display: inline-block;
+    width: 28px;
+    height: 16px;
+    background-image: url("/images/burger.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+}
+.sitenav {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: -1px;
+    display: none;
+    width: 300px;
+    height: 100%;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    padding-right: 24px;
+    padding-left: 24px;
+    background-color: #1B262F;
+    opacity: 0.95;
+
+    animation-name: burger;
+    animation-timing-function: ease;
+    animation-duration: 1s;
+    animation-fill-mode: 1s;
+}
+@keyframes burger {
+    0%{
+        right: -400px;
+    }
+    100%{
+        right: 0;
+    }
+}
+.sitenav__close {
+    display: block;
+    margin-left: auto;
+    margin-bottom: 20px;
+    width: 22px;
+    height: 22px;
+    background-image: url("/images/close.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent
+}
+.sitenav__list {
+    @include list-unstyle;
+    display: flex;
+    padding-top: 20px;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid #FBFCFE50;
+}
+.sitenav__item {
+    list-style-type: none;
+    margin-bottom: 24px;
+}
+.sitenav__link {
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #FBFCFE;
+    opacity: 0.7;
+}
+.site-header__demo {
+    display: block;
+    text-align: center;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: -0.115385px;
+    color: #FBFCFE;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    padding: 16px 24px;
+    background-color: #BA4270;
+    box-shadow: 10px 10px 25px -10px #36536b40;
+    border-radius: 24px;
+}
+
+.close {
+    display: none;
+}
+.open {
+    display: block;
+}
+
+@include mobile-first (650px) {
+    .site-header__burger {
+        display: none;
+    }
+    .sitenav {
+        position: static;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-top: 0;
+        padding-bottom: 0;
+        background-color: transparent;
+        width: 100%;
+    }
+    .sitenav__list {
+        flex-direction: row;
+        margin-right: auto;
+        margin-left: auto;
+        border-top: none;
+    }
+    .sitenav__close {
+        display: none;
+    }
+    .sitenav__item:not(:last-child) {
+        margin-right: 40px;
+    }
+    .sitenav__link {
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 18px;
+        color: #36536B;
+        mix-blend-mode: normal;
+        opacity: 0.7;
+    }
+}

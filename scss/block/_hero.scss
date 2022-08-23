@@ -1,0 +1,104 @@
+.hero {
+    background-color: #F2F2F2;
+    background-image: url("/images/circle.svg");
+    background-repeat: no-repeat;
+    background-size: 600px;
+    background-position: center top -450px;
+}
+
+.hero__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero__heading {
+    @include heading-text-unstyle;
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: -0.246154px;
+    color: #36536B;    
+}
+.hero__form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+.form-box__inp {
+    display: block;
+    margin-top: 24px;
+    padding: 16px 24px;
+    background-color: #fff;
+    opacity: 0.5;
+    border: none;
+    border-radius: 24px;
+}
+.form-box__inp::placeholder {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: #36536B;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+.form-box__submit {
+    display: block;
+    margin-top: 24px;
+    padding: 16px 24px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: -0.115385px;
+    background-color: #BA4270;
+    color: #FBFCFE;
+    border: none;
+    border-radius: 24px;
+}
+.hero__title {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    color: #6C8294;
+}
+@include mobile-first (650px) {
+    .hero {
+        padding-top: 50px;
+        background-size: 1000px;
+        background-position: center top -800px;
+    }
+    .hero__heading {
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 56px;
+        text-align: center;
+        letter-spacing: -0.369231px;        
+        font-size: 48px;
+    }
+    .hero__box {
+        width: 550px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .hero__form {
+        margin-top: 50px;
+        flex-direction: row;
+        background-color: #fff;
+        border-radius: 24px;
+        box-shadow: 10px 10px 25px -10px #36536b40;
+    }
+    .form-box__inp {
+        width: auto;
+        padding: 10px 27px;
+        margin-top: 0;
+    }
+    .form-box__submit {
+        margin-top: 0;
+        margin-left: auto;
+    }
+}
