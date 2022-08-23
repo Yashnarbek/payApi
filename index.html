@@ -42,7 +42,11 @@
         <section class="hero">
             <div class="container">
                 <div class="hero__wrapper">
-                    <img class="hero__img" src="./images/hero-phone.svg" alt="Phone picture" width="155" height="300">
+                    <picture class="hero__img-box">
+                        <source media="(min-width: 992px)" srcset="./images/hero-phone.svg" width="380" height="900">
+                        <img class="hero__img" src="./images/hero-phone.svg" alt="Phone picture" width="155" height="300">
+
+                    </picture>
                     <div class="hero__box">
                         <h1 class="hero__heading">Start building with our APIs for absolutely free.</h1>
                         <form class="hero__form form-box" action="https://echo.htmlacademy.ru/courses" method="post" autocomplete="off">
@@ -56,6 +60,49 @@
         </section>
         <!-- hero end  -->
 
+        <section class="work">
+            <div class="container">
+                <div class="work__wrapper">
+                    <ul class="work__list">
+                        <li class="work__item">
+                            <a href="#" class="work__link">
+                                <img class="work__img" src="./images/tesla.svg" alt="picture">
+                            </a>
+                        </li>
+                        <li class="work__item">
+                            <a href="#" class="work__link">
+                                <img class="work__img" src="./images/microsoft.svg" alt="picture">
+                            </a>
+                        </li>
+                        <li class="work__item">
+                            <a href="#" class="work__link">
+                                <img class="work__img" src="./images/" alt="picture">
+                            </a>
+                        </li>
+                        <li class="work__item">
+                            <a href="#" class="work__link">
+                                <img class="work__img" src="/images/oracle.svg" alt="picture">
+                            </a>
+                        </li>
+                        <li class="work__item">
+                            <a href="#" class="work__link">
+                                <img class="work__img" src="/images/google.svg" alt="picture">
+                            </a>
+                        </li>
+                        <li class="work__item">
+                            <a href="#" class="work__link">
+                                <img class="work__img" src="/images/nvida.svg" alt="picture">
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="work__box">
+                        <h class="work__heading">Who we work with</h>
+                        <p class="work__title">Today, millions of people around the world have successfully connected their accounts to apps they love using our API. We provide developers with the tools they need to create easy and accessible experiences for their users. </p>
+                        <a href="" class="work__about">About Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <!-- MAIN END  -->
 
