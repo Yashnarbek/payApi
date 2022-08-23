@@ -718,8 +718,8 @@ body {
   }
 }
 .work {
+  margin-top: -120px;
   position: relative;
-  top: -120px;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #1B262F;
@@ -798,9 +798,13 @@ body {
   }
 }
 @media only screen and (min-width: 992px) {
+  .work {
+    padding-top: 110px;
+  }
   .work__wrapper {
     display: flex;
     flex-direction: row-reverse;
+    align-items: center;
   }
   .work__list {
     align-items: center;
@@ -809,6 +813,7 @@ body {
   }
   .work__item {
     margin-right: 20px;
+    margin-bottom: 60px;
     height: 0px;
   }
   .work__img {
