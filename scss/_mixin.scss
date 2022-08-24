@@ -9,6 +9,8 @@
 @mixin after-befor ($width, $height){
     content: "";
     display: inline-block;
+    width: $width;
+    height: $height;
 }
 @mixin mobile-first($width) {
     @media only screen and (min-width: $width){

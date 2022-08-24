@@ -36,7 +36,7 @@
 
     animation-name: burger;
     animation-timing-function: ease;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-fill-mode: 1s;
 }
 @keyframes burger {
@@ -56,7 +56,8 @@
     background-image: url("/images/close.svg");
     background-repeat: no-repeat;
     background-position: center;
-    background-color: transparent
+    background-color: transparent;
+    border: none;
 }
 .sitenav__list {
     @include list-unstyle;

@@ -9,13 +9,11 @@
 .work {
     margin-top: -120px;
     position: relative;
-    padding-top: 60px;
+    padding-top: 100px;
     padding-bottom: 60px;
     background-color: #1B262F;
 }
 
-.work__wrapper {
-}
 .work__list {
     @include list-unstyle;
     display: grid;
@@ -112,8 +110,155 @@
     .work__title {
         text-align: start;
     }
-
 }
+
+// implement section bigen
+.implement {
+    padding-top: 70px;
+    padding-bottom: 40px;
+    background-color: #F2F2F2;
+}
+.implement__list {
+    @include list-unstyle;
+}
+.implement__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+}
+.imp-item__heading {
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+    letter-spacing: -0.369231px;
+    color: #36536B;    
+}
+.imp-item__title {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    text-align: center;
+    color: #6C8294;    
+} 
+.implement__services {
+    padding-top: 50px;
+    @include list-unstyle;
+}
+.imp-services__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    list-style: none;
+}
+.imp-services__item:nth-child(1)::before {
+    margin-bottom: 25px;
+    @include after-befor(106px, 106px);
+    background-image: url("/images/person.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.imp-services__item:nth-child(2)::before {
+    margin-bottom: 25px;
+    @include after-befor(106px, 106px);
+    background-image: url("/images/banking.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.imp-services__item:nth-child(3)::before {
+    margin-bottom: 25px;
+    @include after-befor(106px, 106px);
+    background-image: url("/images/coms.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.impservices__heading {
+    @include heading-text-unstyle;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: -0.138462px;
+    color: #36536B;    
+}
+.imp-services__title {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: -0.115385px;
+    color: #6C8294;    
+}
+@include mobile-first (650px) {
+    .implement__services {
+        display: flex;
+    }
+}
+@include mobile-first (992px) {
+    .implement {
+        background-image: url("../images/circle.svg");
+        background-repeat: no-repeat;
+        background-size: 650px;
+        background-position: calc(50% + 530px) 350px;
+    }
+    .implement__item {
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row;
+    }
+    .implement__item:nth-child(2n) {
+        justify-content: flex-end;
+        flex-direction: row-reverse;
+    }
+    .imp-item__box {
+        width: 445px;
+    }
+    .imp-item__heading {
+        @include heading-text-unstyle;
+        text-align: start;
+    }
+    .imp-item__title {
+        text-align: start;
+    }
+    .imp-services__item {
+        width: 350px;
+    }
+    .emplement__start {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    .emplement__start-heading {
+        @include heading-text-unstyle;
+        font-family: 'DM Serif Display';
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 56px;
+        letter-spacing: -0.369231px;
+        color: #36536B;        
+    }
+    .form-box--emplement {
+        align-items: center;
+        width: 445px;
+        margin: 0 0 0 auto;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .form-box__inp--emplement {
+        padding-top: 0px;
+        padding-bottom: 5px;
+    }
+    .form-box__submit--emplement {
+        display: inline-block;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+// implement section end 
 
 
 // Nurislomxon

@@ -417,8 +417,8 @@ body {
           animation-name: burger;
   -webkit-animation-timing-function: ease;
           animation-timing-function: ease;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
   -webkit-animation-fill-mode: 1s;
           animation-fill-mode: 1s;
 }
@@ -450,6 +450,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-color: transparent;
+  border: none;
 }
 
 .sitenav__list {
@@ -562,6 +563,7 @@ body {
   z-index: 6;
   top: -80px;
   padding-top: 100px;
+  padding-bottom: 100px;
   background-color: #F2F2F2;
   background-image: url("/images/circle.svg");
   background-repeat: no-repeat;
@@ -720,7 +722,7 @@ body {
 .work {
   margin-top: -120px;
   position: relative;
-  padding-top: 60px;
+  padding-top: 100px;
   padding-bottom: 60px;
   background-color: #1B262F;
 }
@@ -828,5 +830,176 @@ body {
   }
   .work__title {
     text-align: start;
+  }
+}
+.implement {
+  padding-top: 70px;
+  padding-bottom: 40px;
+  background-color: #F2F2F2;
+}
+
+.implement__list {
+  margin: 0;
+  padding-left: 0;
+}
+
+.implement__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+}
+
+.imp-item__heading {
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  text-align: center;
+  letter-spacing: -0.369231px;
+  color: #36536B;
+}
+
+.imp-item__title {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 28px;
+  text-align: center;
+  color: #6C8294;
+}
+
+.implement__services {
+  padding-top: 50px;
+  margin: 0;
+  padding-left: 0;
+}
+
+.imp-services__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+  list-style: none;
+}
+
+.imp-services__item:nth-child(1)::before {
+  margin-bottom: 25px;
+  content: "";
+  display: inline-block;
+  width: 106px;
+  height: 106px;
+  background-image: url("/images/person.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.imp-services__item:nth-child(2)::before {
+  margin-bottom: 25px;
+  content: "";
+  display: inline-block;
+  width: 106px;
+  height: 106px;
+  background-image: url("/images/banking.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.imp-services__item:nth-child(3)::before {
+  margin-bottom: 25px;
+  content: "";
+  display: inline-block;
+  width: 106px;
+  height: 106px;
+  background-image: url("/images/coms.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.impservices__heading {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: -0.138462px;
+  color: #36536B;
+}
+
+.imp-services__title {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: -0.115385px;
+  color: #6C8294;
+}
+
+@media only screen and (min-width: 650px) {
+  .implement__services {
+    display: flex;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .implement {
+    background-image: url("../images/circle.svg");
+    background-repeat: no-repeat;
+    background-size: 650px;
+    background-position: calc(50% + 530px) 350px;
+  }
+  .implement__item {
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+  }
+  .implement__item:nth-child(2n) {
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+  }
+  .imp-item__box {
+    width: 445px;
+  }
+  .imp-item__heading {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: start;
+  }
+  .imp-item__title {
+    text-align: start;
+  }
+  .imp-services__item {
+    width: 350px;
+  }
+  .emplement__start {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  .emplement__start-heading {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: "DM Serif Display";
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.369231px;
+    color: #36536B;
+  }
+  .form-box--emplement {
+    align-items: center;
+    width: 445px;
+    margin: 0 0 0 auto;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .form-box__inp--emplement {
+    padding-top: 0px;
+    padding-bottom: 5px;
+  }
+  .form-box__submit--emplement {
+    display: inline-block;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }/*# sourceMappingURL=main.css.map */
