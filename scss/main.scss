@@ -193,9 +193,24 @@
     letter-spacing: -0.115385px;
     color: #6C8294;    
 }
+.emplement__start-heading {
+    @include heading-text-unstyle;
+    text-align: center;
+    font-family: 'DM Serif Display';
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.369231px;
+    color: #36536B;        
+}
 @include mobile-first (650px) {
     .implement__services {
         display: flex;
+    }
+    .emplement__start {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 @include mobile-first (992px) {
@@ -229,38 +244,91 @@
     }
     .emplement__start {
         display: flex;
+        flex-direction: row;
         align-items: center;
         width: 100%;
     }
-    .emplement__start-heading {
-        @include heading-text-unstyle;
-        font-family: 'DM Serif Display';
-        font-weight: 400;
-        font-size: 48px;
-        line-height: 56px;
-        letter-spacing: -0.369231px;
-        color: #36536B;        
-    }
     .form-box--emplement {
         align-items: center;
-        width: 445px;
+        width: 470px;
         margin: 0 0 0 auto;
         padding-top: 0;
         padding-bottom: 0;
     }
-    .form-box__inp--emplement {
-        padding-top: 0px;
-        padding-bottom: 5px;
-    }
     .form-box__submit--emplement {
         display: inline-block;
-        padding-top: 0;
-        padding-bottom: 0;
+        padding-top: 14px;
+        padding-bottom: 14px;
     }
 }
 // implement section end 
 
+// FOOTER BIGEN
+// .site-footer {
+//     padding-top: 50px;
+//     padding-bottom: 34px;
+//     background-color: #1B262F;
+// }
+// .site-footer__wrapper {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     flex-direction: column;
+// }
+// .site-footer__logo {
+//     display: block;
+//     margin-bottom: 50px;
+// }
+// .site-footer__nav {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     @include list-unstyle;
+//     list-style: none;
+//     margin-bottom: 30px;
+// }
+// .footernav__item {
+//     margin-bottom: 30px;
+// }
+// .footernav__link {
+//     text-decoration: none;
+//     font-weight: 700;
+//     font-size: 15px;
+//     line-height: 18px;
+//     color: #FBFCFE;
+//     mix-blend-mode: normal;
+//     opacity: 0.7;
+// }
 
+// .footer-social {
+//     display: flex;
+//     align-items: center;
+//     @include list-unstyle;
+//     list-style: none;
+//     margin-bottom: 30px;
+// }
+// .footer-social__item:not(:last-child) {
+//     margin-right: 40px;
+// }
+// .footer-social__link {
+
+// }
+// @include mobile-first (650px) {
+//     .site-footer__wrapper {
+//         flex-direction: row;
+//         align-items: center;
+//     }
+//     .site-footer__nav {
+//         flex-direction: row;
+//         align-items: center;
+//     }
+//     .sitenav__item {
+//         margin-bottom: 0;
+//     }
+//     .footernav__item:not(:last-child) {
+//         margin-right: 40px;
+//     }
+// }
 // Nurislomxon
 
 

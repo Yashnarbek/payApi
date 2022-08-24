@@ -719,6 +719,340 @@ body {
     color: #36536B;
   }
 }
+.hero-pricing {
+  position: relative;
+}
+
+.hero-pricing::before {
+  position: absolute;
+  top: -106px;
+  left: 0;
+  content: "";
+  z-index: 1;
+  width: 10%;
+  width: 100%;
+  height: 100%;
+  background-image: url(../../images/pricing-cricle.svg);
+  background-size: 870px 870px;
+  background-position: calc(50% + 370px) calc(50% - 1312px);
+  background-repeat: no-repeat;
+}
+
+.hero-pricing__title {
+  padding-top: 48px;
+  margin-top: 0;
+  font-family: "DM Serif Display";
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 36px;
+  text-align: center;
+  letter-spacing: -0.246154px;
+  color: #36536B;
+}
+
+.hero-pricing__list {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.hero-pricing__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: center;
+}
+.hero-pricing__item:nth-child(1) .hero-pricing__item-link-wrap .hero-pricing__item-link:nth-child(5)::before {
+  background: none;
+}
+.hero-pricing__item:nth-child(1) .hero-pricing__item-link-wrap .hero-pricing__item-link:nth-child(5) {
+  opacity: 0.6;
+}
+.hero-pricing__item:nth-child(1) .hero-pricing__item-link-wrap .hero-pricing__item-link:nth-child(6)::before {
+  background: none;
+}
+.hero-pricing__item:nth-child(1) .hero-pricing__item-link-wrap .hero-pricing__item-link:nth-child(6) {
+  opacity: 0.6;
+}
+.hero-pricing__item:nth-child(1) .hero-pricing__item-link-wrap .hero-pricing__item-link:nth-child(7)::before {
+  background: none;
+}
+.hero-pricing__item:nth-child(1) .hero-pricing__item-link-wrap .hero-pricing__item-link:nth-child(7) {
+  opacity: 0.6;
+}
+.hero-pricing__item:nth-child(1) .hero-pricing__item-link-wrap .hero-pricing__item-link:nth-child(8)::before {
+  background: none;
+}
+.hero-pricing__item:nth-child(1) .hero-pricing__item-link-wrap .hero-pricing__item-link:nth-child(8) {
+  opacity: 0.6;
+}
+.hero-pricing__item:nth-child(2) .hero-pricing__item-link-wrap .hero-pricing__item-link:nth-child(6)::before {
+  background: none;
+}
+.hero-pricing__item:nth-child(2) .hero-pricing__item-link-wrap .hero-pricing__item-link:nth-child(6) {
+  opacity: 0.6;
+}
+.hero-pricing__item:nth-child(2) .hero-pricing__item-link-wrap .hero-pricing__item-link:nth-child(7)::before {
+  background: none;
+}
+.hero-pricing__item:nth-child(2) .hero-pricing__item-link-wrap .hero-pricing__item-link:nth-child(7) {
+  opacity: 0.6;
+}
+
+.hero-pricing__item-title {
+  margin-bottom: 0;
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: -0.184615px;
+  color: #BA4270;
+}
+
+.hero-pricing__item-text {
+  margin-top: 18px;
+  margin-bottom: 8px;
+  font-size: 15px;
+  line-height: 28px;
+  text-align: center;
+  color: #6C8294;
+}
+
+.hero-pricing__item-span {
+  padding-bottom: 24px;
+  display: block;
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 72px;
+  text-align: center;
+  letter-spacing: -0.430769px;
+  color: #36536B;
+}
+
+.hero-pricing__item-link-wrap::before {
+  padding-top: 24px;
+  content: "";
+  display: inline-block;
+  width: 220px;
+  margin: 0 auto;
+  height: 1px;
+  border-top: 1px solid rgba(54, 83, 107, 0.3019607843);
+}
+.hero-pricing__item-link-wrap::after {
+  padding-top: 24px;
+  content: "";
+  display: inline-block;
+  width: 220px;
+  margin: 0 auto;
+  height: 1px;
+  border-bottom: 1px solid rgba(54, 83, 107, 0.3019607843);
+}
+
+.hero-pricing__item-link {
+  padding-left: 50px;
+  text-align: left;
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #36536B;
+  text-decoration: none;
+}
+.hero-pricing__item-link::before {
+  margin-right: 20px;
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 8px;
+  background-image: url("../../images/cheked.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.hero-pricing__btn-wrap {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.hero-pricing__btn {
+  padding: 15px 28px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: -0.115385px;
+  color: #36536B;
+  border: 1px solid #36536B;
+  border-radius: 24px;
+}
+
+.raedy {
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+.raedy__title {
+  font-family: "DM Serif Display";
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 36px;
+  text-align: center;
+  letter-spacing: -0.246154px;
+  color: #36536B;
+}
+
+.raedy__input {
+  width: 300px;
+  margin-bottom: 16px;
+  padding: 16px 0 14px 27px;
+  background: #FBFCFE;
+  box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+  border-radius: 24px;
+  font-family: "Public Sans";
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  border: none;
+  color: #36536B;
+}
+
+.raedy__btn {
+  width: 300px;
+  padding: 16px 46px 14px 50px;
+  border: none;
+  background: #BA4270;
+  border-radius: 24px;
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: -0.115385px;
+  color: #FBFCFE;
+}
+
+@media only screen and (min-width: 550px) {
+  .hero-pricing__item-link-wrap::before {
+    width: 327px;
+  }
+  .hero-pricing__item-link-wrap::after {
+    width: 327px;
+  }
+}
+@media only screen and (min-width: 640px) {
+  .raedy__title {
+    font-size: 48px;
+    line-height: 56px;
+  }
+  .raedy__btn {
+    width: 178px;
+    margin-left: -50px;
+    padding: 16px 26px 14px 24px;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .hero-pricing__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: space-between;
+  }
+  .hero-pricing__item {
+    width: 223px;
+  }
+  .hero-pricing__title {
+    padding-top: 75px;
+  }
+  .hero-pricing__item-link-wrap::before {
+    width: 220px;
+  }
+  .hero-pricing__item-link-wrap::after {
+    width: 220px;
+  }
+  .hero-pricing::before {
+    background-position: calc(50% + 550px) calc(50% - 682px);
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .hero-pricing__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: space-between;
+  }
+  .hero-pricing__item {
+    align-items: start;
+    margin: 0;
+  }
+  .hero-pricing__title {
+    padding-top: 75px;
+  }
+  .hero-pricing__title {
+    padding-top: 82px;
+    text-align: left;
+    font-size: 56px;
+    line-height: 56px;
+  }
+  .hero-pricing__item-title {
+    margin-bottom: 0;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: left;
+  }
+  .hero-pricing__item-text {
+    margin-top: 18px;
+    margin-bottom: 8px;
+    text-align: left;
+  }
+  .hero-pricing__item-span {
+    padding-bottom: 24px;
+    text-align: left;
+  }
+  .hero-pricing__item-link {
+    padding-left: 0;
+  }
+  .hero-pricing__item-link-wrap::before {
+    width: 300px;
+  }
+  .hero-pricing__item-link-wrap::after {
+    width: 300px;
+  }
+  .raedy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 100px;
+    margin-top: 96px;
+  }
+  .raedy__title {
+    font-size: 48px;
+    line-height: 56px;
+    margin: 0;
+  }
+  .raedy__btn {
+    width: 178px;
+    margin-left: -50px;
+    padding: 16px 26px 14px 24px;
+  }
+}
+@media only screen and (min-width: 1075px) {
+  .hero-pricing__item {
+    width: 350px;
+  }
+  .hero-pricing__item-link-wrap::before {
+    width: 350px;
+  }
+  .hero-pricing__item-link-wrap::after {
+    width: 350px;
+  }
+}
 .work {
   margin-top: -120px;
   position: relative;
@@ -936,9 +1270,26 @@ body {
   color: #6C8294;
 }
 
+.emplement__start-heading {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  font-family: "DM Serif Display";
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.369231px;
+  color: #36536B;
+}
+
 @media only screen and (min-width: 650px) {
   .implement__services {
     display: flex;
+  }
+  .emplement__start {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -973,33 +1324,20 @@ body {
   }
   .emplement__start {
     display: flex;
+    flex-direction: row;
     align-items: center;
     width: 100%;
   }
-  .emplement__start-heading {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-family: "DM Serif Display";
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 56px;
-    letter-spacing: -0.369231px;
-    color: #36536B;
-  }
   .form-box--emplement {
     align-items: center;
-    width: 445px;
+    width: 470px;
     margin: 0 0 0 auto;
     padding-top: 0;
     padding-bottom: 0;
   }
-  .form-box__inp--emplement {
-    padding-top: 0px;
-    padding-bottom: 5px;
-  }
   .form-box__submit--emplement {
     display: inline-block;
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: 14px;
+    padding-bottom: 14px;
   }
 }/*# sourceMappingURL=main.css.map */
