@@ -728,8 +728,7 @@ body {
   top: -106px;
   left: 0;
   content: "";
-  z-index: 1;
-  width: 10%;
+  z-index: -1;
   width: 100%;
   height: 100%;
   background-image: url(../../images/pricing-cricle.svg);
@@ -888,8 +887,13 @@ body {
   line-height: 18px;
   letter-spacing: -0.115385px;
   color: #36536B;
+  background: transparent;
   border: 1px solid #36536B;
   border-radius: 24px;
+}
+.hero-pricing__btn:hover {
+  color: #FBFCFE;
+  background: #36536B;
 }
 
 .raedy {
@@ -938,6 +942,60 @@ body {
   color: #FBFCFE;
 }
 
+.site-footer {
+  background: #1B262F;
+  width: 100%;
+  text-align: center;
+}
+
+.site-footer__wrap {
+  padding-top: 46px;
+}
+
+.site-footer__logo {
+  display: flex;
+  justify-content: center;
+}
+
+.site-footer__list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.site-footer__item {
+  margin-top: 31px;
+}
+
+.site-footer__link {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: #FBFCFE;
+  mix-blend-mode: normal;
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  list-style: none;
+  margin-top: 40px;
+}
+
+.socials__item {
+  padding-bottom: 55px;
+}
+.socials__item:nth-child(2) {
+  margin: 0 24px;
+}
+
+.socials__link {
+  fill: #fff;
+  display: inline-block;
+}
+
 @media only screen and (min-width: 550px) {
   .hero-pricing__item-link-wrap::before {
     width: 327px;
@@ -955,6 +1013,53 @@ body {
     width: 178px;
     margin-left: -50px;
     padding: 16px 26px 14px 24px;
+  }
+}
+@media only screen and (min-width: 700px) {
+  .site-footer__wrappwer {
+    padding-top: 36px;
+    margin-bottom: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .site-footer {
+    background: #1B262F;
+    width: 100%;
+    text-align: center;
+  }
+  .site-footer__wrap {
+    padding-top: 0;
+    display: flex;
+    align-items: center;
+  }
+  .site-footer__logo {
+    justify-content: center;
+    margin-right: 24px;
+  }
+  .site-footer__list {
+    display: flex;
+    margin: 0;
+  }
+  .site-footer__item {
+    margin-top: 0;
+    margin-left: 40px;
+  }
+  .socials {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .socials__item {
+    padding-bottom: 0;
+  }
+  .socials__item:nth-child(2) {
+    margin: 0 24px;
+  }
+  .socials__link {
+    fill: #fff;
+    display: inline-block;
   }
 }
 @media only screen and (min-width: 800px) {
