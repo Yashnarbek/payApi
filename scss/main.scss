@@ -9,8 +9,7 @@
 .work {
     margin-top: -120px;
     position: relative;
-    padding-top: 100px;
-    padding-bottom: 60px;
+    padding-bottom: 120px;
     background-color: #1B262F;
 }
 
@@ -115,7 +114,7 @@
 // implement section bigen
 .implement {
     padding-top: 70px;
-    padding-bottom: 40px;
+    padding-bottom: 80px;
     background-color: #F2F2F2;
 }
 .implement__list {
@@ -176,7 +175,7 @@
     background-repeat: no-repeat;
     background-size: contain;
 }
-.impservices__heading {
+.imp-services__heading {
     @include heading-text-unstyle;
     font-weight: 700;
     font-size: 18px;
@@ -193,7 +192,7 @@
     letter-spacing: -0.115385px;
     color: #6C8294;    
 }
-.emplement__start-heading {
+.implement__start-heading {
     @include heading-text-unstyle;
     text-align: center;
     font-family: 'DM Serif Display';
@@ -207,7 +206,7 @@
     .implement__services {
         display: flex;
     }
-    .emplement__start {
+    .implement__start {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -242,7 +241,7 @@
     .imp-services__item {
         width: 350px;
     }
-    .emplement__start {
+    .implement__start {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -263,72 +262,7 @@
 }
 // implement section end 
 
-// FOOTER BIGEN
-// .site-footer {
-//     padding-top: 50px;
-//     padding-bottom: 34px;
-//     background-color: #1B262F;
-// }
-// .site-footer__wrapper {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     flex-direction: column;
-// }
-// .site-footer__logo {
-//     display: block;
-//     margin-bottom: 50px;
-// }
-// .site-footer__nav {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     @include list-unstyle;
-//     list-style: none;
-//     margin-bottom: 30px;
-// }
-// .footernav__item {
-//     margin-bottom: 30px;
-// }
-// .footernav__link {
-//     text-decoration: none;
-//     font-weight: 700;
-//     font-size: 15px;
-//     line-height: 18px;
-//     color: #FBFCFE;
-//     mix-blend-mode: normal;
-//     opacity: 0.7;
-// }
 
-// .footer-social {
-//     display: flex;
-//     align-items: center;
-//     @include list-unstyle;
-//     list-style: none;
-//     margin-bottom: 30px;
-// }
-// .footer-social__item:not(:last-child) {
-//     margin-right: 40px;
-// }
-// .footer-social__link {
-
-// }
-// @include mobile-first (650px) {
-//     .site-footer__wrapper {
-//         flex-direction: row;
-//         align-items: center;
-//     }
-//     .site-footer__nav {
-//         flex-direction: row;
-//         align-items: center;
-//     }
-//     .sitenav__item {
-//         margin-bottom: 0;
-//     }
-//     .footernav__item:not(:last-child) {
-//         margin-right: 40px;
-//     }
-// }
 // Nurislomxon
 
 
