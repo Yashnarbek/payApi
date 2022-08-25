@@ -400,13 +400,13 @@ body {
 }
 
 .sitenav {
-  position: absolute;
+  position: fixed;
   z-index: 11;
-  top: -40px;
-  right: -20px;
+  top: 0;
+  right: 0;
   display: none;
   width: 300px;
-  height: 500px;
+  height: 100%;
   padding-top: 40px;
   padding-bottom: 20px;
   padding-right: 24px;
@@ -428,7 +428,7 @@ body {
     right: -400px;
   }
   100% {
-    right: -20px;
+    right: 0;
   }
 }
 
@@ -437,7 +437,7 @@ body {
     right: -400px;
   }
   100% {
-    right: -20px;
+    right: 0;
   }
 }
 .sitenav__close {
@@ -446,6 +446,7 @@ body {
   margin-bottom: 20px;
   width: 22px;
   height: 22px;
+  background-color: transparent;
   background-image: url("/images/close.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -504,6 +505,10 @@ body {
 
 .open {
   display: block;
+}
+
+.overflow {
+  overflow: hidden;
 }
 
 @media only screen and (min-width: 650px) {
